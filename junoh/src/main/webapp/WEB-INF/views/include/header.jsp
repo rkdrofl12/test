@@ -319,7 +319,7 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="/board/listAll"><i class="fa fa-circle-o"></i> 게시판목록</a></li>
-                <li><a href="/resources/index2.html"><i class="fa fa-circle-o"></i> 2</a></li>
+                <li><a href="/board/tilesHome"><i class="fa fa-circle-o"></i> 타일즈</a></li>
               </ul>
             </li>
             <li class="treeview">

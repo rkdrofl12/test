@@ -27,6 +27,12 @@
     	<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
     </bean>
     
+    <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+    	<property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />
+    	<property name="order" value="1" />
+    </bean>
+    
+    
     <context:component-scan base-package="org.spring.persistence"></context:component-scan>
     <context:component-scan base-package="org.spring.service"></context:component-scan>
     <!-- <context:component-scan base-package="org.spring.controller"></context:component-scan> -->

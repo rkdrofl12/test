@@ -26,7 +26,7 @@ public class BoardController {
 
   @RequestMapping(value = "/register", method = RequestMethod.GET)
   public void registerGET(BoardVO board, Model model) throws Exception {
-
+	  System.out.println("등록");
     logger.info("register get ...........");
   }
 
@@ -58,7 +58,7 @@ public class BoardController {
 
   @RequestMapping(value = "/listAll", method = RequestMethod.GET)
   public void listAll(Model model) throws Exception {
-
+	  System.out.println("리스트까지온거임");
     logger.info("show all list......................");
     model.addAttribute("list", service.listAll());
   }
@@ -101,6 +101,14 @@ public class BoardController {
     rttr.addFlashAttribute("msg", "SUCCESS");
 
     return "redirect:/board/listAll";
+  }
+  
+  @RequestMapping(value = "/board/tilesHome", method = RequestMethod.GET)
+  public String tilesHome(BoardVO board, RedirectAttributes rttr) throws Exception {
+
+   System.out.println("타일즈?");
+
+    return "/main/tilesHome";
   }
 
 
